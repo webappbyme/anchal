@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <section>
+        <h1><u><i>Anchal's Travel Agency</i></u></h1>
+    </section>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#calculator">Trip Cost Calculator</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2><i>Explore the World with Us!</i></h2><br>
+        <p>We help you explore the world with ease and comfort. Find the best destinations and plan your 
+            next adventure!
+            <br>
+            <br>
+            At Anchal's Travel Agency, we believe that travel is not just about destinations—it's 
+            about experiences. Our mission is to help you explore the world, immerse yourself in diverse 
+            cultures, and create unforgettable memories. From breathtaking beaches to vibrant cityscapes, 
+            we specialize in crafting journeys tailored to your dreams. With a focus on comfort, convenience, 
+            and curated itineraries, we are committed to making your travel experience smooth, safe, 
+            and exciting.
+        </p>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations">
+        <h2><i>Popular Destinations</i></h2>
+        <div class="image-gallery">
+            <img src="paris.jpg" alt="Destination 1" class="fade-in">
+            <img src="nyc.jpg" alt="Destination 2" class="fade-in">
+            <img src="bangkok.jpg" alt="Destination 3" class="fade-in">
+        </div>
+    </section>
+
+    <!-- Trip Cost Calculator Section -->
+    <section id="calculator">
+        <h2><i>Trip Cost Calculator</i></h2><br>
+        <form id="costCalculator">
+            <label for="destination">Select Destination:</label>
+            <select id="destination">
+                <option value="1000">Paris</option>
+                <option value="1200">New York</option>
+                <option value="800">Bangkok</option>
+            </select>
+            <label for="nights">Number of Nights:</label>
+            <input type="number" id="nights" placeholder="Enter nights">
+            <label for="people">Number of People:</label>
+            <input type="number" id="people" placeholder="Enter number of people">
+            <button type="button" onclick="calculateTripCost()">Calculate Cost</button>
+        </form>
+        <p id="tripCostDisplay"></p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2><i>Contact Us</i></h2>
+        <br>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your custom travel inquiry..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Anchal's Travel Agency | All rights reserved</p>
+        <p>Contact us: <a href="mailto:info@travelagency.com">info@travelagency.com</a> | Phone: +1 (555) 123-4567</p>
+    </div>
+</footer>
+
+</body>
+</html>
